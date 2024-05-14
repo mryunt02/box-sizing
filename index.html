@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <h1 style="text-align: center">BOX-SIZING</h1>
+    <div class="boxes">
+      <div class="content">
+        <div class="content_box">content-box</div>
+        <div class="contentDiv">
+          <h4>
+            Height of content box is: <span id="content_box_height"></span
+            ><span>px</span>
+          </h4>
+          <span id="padding_value"></span>
+          <h4>
+            Width of content box is: <span id="content_box_width"></span
+            ><span>px</span>
+          </h4>
+        </div>
+      </div>
+      <div class="border">
+        <div class="border_box">border-box</div>
+        <div borderDiv>
+          <h4>
+            Height of border box is: <span id="border_box_height"></span
+            ><span>px</span>
+          </h4>
+          <h4>
+            Width of border box is: <span id="border_box_width"></span
+            ><span>px</span>
+          </h4>
+        </div>
+      </div>
+    </div>
+    <label for="paddingInput">Add padding:</label>
+    <input type="number" id="paddingInput" name="paddingInput" class="input" />
+    <button id="applyPadding">Add Padding</button>
+
+    <label for="marginInput">Add margin:</label>
+    <input type="number" id="marginInput" name="marginInput" class="input" />
+    <button id="applyMargin">Add Margin</button>
+
+    <label for="borderInput">Add border:</label>
+    <input type="number" id="borderInput" name="borderInput" class="input" />
+    <button id="applyBorder">Add Border</button>
+    <div></div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
